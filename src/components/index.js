@@ -1,3 +1,4 @@
-import navBar from "./navBar";
+import NavBar from "./navBar";
+import ErrorPage from "./errorPage";
 
-export { navBar };
+export { NavBar, ErrorPage };
