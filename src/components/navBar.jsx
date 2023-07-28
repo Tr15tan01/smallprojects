@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-3">
@@ -17,25 +19,25 @@ export default function NavBar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="/">
-              Home <span className="sr-only">(current)</span>
-            </a>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/">
+              Home
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/fuck">
+            <NavLink className="nav-link" to="/about">
               Features
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <NavLink className="nav-link" to="/products">
               Pricing
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">
+            <Link className="nav-link" to="/haha">
               Disabled
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

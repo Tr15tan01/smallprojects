@@ -1,30 +1,31 @@
-import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-
+// import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import {
+  About,
+  Home,
+  Products,
+  ErrorPage,
+  SharedLayout,
+  SingleProduct,
+} from "./pages";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  // const [count, setCount] = useState(0);
+  //If you want to nest some routes, then instead of self-closing first route tag, you just add </Route> at the end of nesting
+  //And index page will be the default path
   return (
-    <>
-      <div>
-        <button className="btn btn-primary">Test Here</button>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="products" element={<Products />} />
+          <Route path="products/:productId" element={<SingleProduct />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
