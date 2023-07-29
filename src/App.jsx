@@ -8,6 +8,7 @@ import {
   ErrorPage,
   SharedLayout,
   SingleProduct,
+  Persons,
 } from "./pages";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="products" element={<Products />} />
+          <Route path="persons" element={<Persons />} />
           <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>

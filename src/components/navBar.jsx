@@ -30,8 +30,8 @@ export default function NavBar() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/products">
-              Pricing
+            <NavLink className="nav-link" to="/persons">
+              Persons
             </NavLink>
           </li>
           <li className="nav-item">
