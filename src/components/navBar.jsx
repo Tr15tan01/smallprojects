@@ -25,8 +25,8 @@ export default function NavBar() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/about">
-              Features
+            <NavLink className="nav-link" to="/menu">
+              Menu
             </NavLink>
           </li>
           <li className="nav-item">
@@ -35,8 +35,8 @@ export default function NavBar() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/haha">
-              Disabled
+            <Link className="nav-link" to="/faq">
+              FAQ
             </Link>
           </li>
         </ul>

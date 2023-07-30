@@ -5,6 +5,8 @@ import { ErrorPage } from "./errorPage";
 import { SharedLayout } from "./sharedLayout";
 import { SingleProduct } from "./product";
 import { Persons } from "./persons";
+import { Faq } from "./faq";
+import { Menu } from "./menu";
 
 export {
   About,
@@ -14,4 +16,6 @@ export {
   SharedLayout,
   SingleProduct,
   Persons,
+  Faq,
+  Menu,
 };

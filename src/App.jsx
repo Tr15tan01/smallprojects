@@ -2,13 +2,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import {
-  About,
   Home,
-  Products,
   ErrorPage,
   SharedLayout,
   SingleProduct,
   Persons,
+  Faq,
+  Menu,
 } from "./pages";
 
 function App() {
@@ -20,8 +20,9 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="menu" element={<Menu />} />
           <Route path="persons" element={<Persons />} />
+          <Route path="faq" element={<Faq />} />
           <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
