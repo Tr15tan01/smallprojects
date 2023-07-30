@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import "./styles.css";
 // ATTENTION!!!!!!!!!!
@@ -21,7 +22,7 @@ export const Jobs = () => {
   if (loading) {
     return (
       <section className="section loading">
-        <h1>Loading...</h1>
+        <h3>Loading...</h3>
       </section>
     );
   }
@@ -52,9 +53,10 @@ export const Jobs = () => {
           <h3>{title}</h3>
           <h4>{company}</h4>
           <p className="job-date">{dates}</p>
-          {duties.map((duty, index) => {
+          {duties.map((duty) => {
+            const id = uuidv4();
             return (
-              <div key={index} className="job-desc">
+              <div key={id} className="job-desc">
                 <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
                 <p>{duty}</p>
               </div>

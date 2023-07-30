@@ -204,7 +204,7 @@ h3 {
 .question header h4 {
   margin-bottom: 0;
 }
-.btn {
+.question-btn {
   background: var(--clr-purple);
   border-color: transparent;
   outline: none;
