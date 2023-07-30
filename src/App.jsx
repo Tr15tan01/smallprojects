@@ -8,7 +8,7 @@ import {
   SingleProduct,
   Persons,
   Faq,
-  Menu,
+  Jobs,
 } from "./pages";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path="menu" element={<Menu />} />
+          <Route path="jobs" element={<Jobs />} />
           <Route path="persons" element={<Persons />} />
           <Route path="faq" element={<Faq />} />
           <Route path="products/:productId" element={<SingleProduct />} />

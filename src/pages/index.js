@@ -6,7 +6,7 @@ import { SharedLayout } from "./sharedLayout";
 import { SingleProduct } from "./product";
 import { Persons } from "./persons";
 import { Faq } from "./faq";
-import { Menu } from "./menu";
+import { Jobs } from "./jobs";
 
 export {
   About,
@@ -17,5 +17,5 @@ export {
   SingleProduct,
   Persons,
   Faq,
-  Menu,
+  Jobs,
 };
