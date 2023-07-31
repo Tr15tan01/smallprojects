@@ -7,6 +7,7 @@ import { SingleProduct } from "./product";
 import { Persons } from "./persons";
 import { Faq } from "./faq";
 import { Jobs } from "./jobs";
+import { Colors } from "./colors";
 
 export {
   About,
@@ -18,4 +19,5 @@ export {
   Persons,
   Faq,
   Jobs,
+  Colors,
 };
