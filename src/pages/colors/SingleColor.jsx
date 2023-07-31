@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import rgbToHex from "./utils";
+// import rgbToHex from "./utils";
 import { toast } from "react-toastify";
 
+// eslint-disable-next-line react/prop-types
 const SingleColor = ({ rgb, weight, index, hexColor }) => {
   const [alert, setAlert] = useState(false);
+  // eslint-disable-next-line react/prop-types
   const bcg = rgb.join(",");
-  const hex = rgbToHex(...rgb);
+  // const hex = rgbToHex(...rgb);
   const hexValue = `#${hexColor}`;
   useEffect(() => {
     const timeout = setTimeout(() => {
