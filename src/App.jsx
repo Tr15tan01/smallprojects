@@ -9,7 +9,6 @@ import {
   Persons,
   Faq,
   Jobs,
-  Slider,
 } from "./pages";
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
           <Route path="jobs" element={<Jobs />} />
           <Route path="persons" element={<Persons />} />
           <Route path="faq" element={<Faq />} />
-          <Route path="slider" element={<Slider />} />
+          <Route path="slider" element={<Faq />} />
           <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>

@@ -7,7 +7,6 @@ import { SingleProduct } from "./product";
 import { Persons } from "./persons";
 import { Faq } from "./faq";
 import { Jobs } from "./jobs";
-import { Slider } from "./slider";
 
 export {
   About,
@@ -19,5 +18,4 @@ export {
   Persons,
   Faq,
   Jobs,
-  Slider,
 };

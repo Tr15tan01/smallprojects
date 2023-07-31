@@ -40,8 +40,8 @@ export default function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/slider">
-              slider
+            <Link className="nav-link" to="/colors">
+              colors
             </Link>
           </li>
         </ul>
