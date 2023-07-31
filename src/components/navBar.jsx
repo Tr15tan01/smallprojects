@@ -39,6 +39,11 @@ export default function NavBar() {
               FAQ
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/slider">
+              slider
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
