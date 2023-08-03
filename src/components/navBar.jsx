@@ -44,6 +44,11 @@ export default function NavBar() {
               colors
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/jokes">
+              jokes
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

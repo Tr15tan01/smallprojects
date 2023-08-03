@@ -10,6 +10,7 @@ import {
   Faq,
   Jobs,
   Colors,
+  Jokes,
 } from "./pages";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="persons" element={<Persons />} />
           <Route path="faq" element={<Faq />} />
           <Route path="colors" element={<Colors />} />
+          <Route path="jokes" element={<Jokes />} />
           <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
