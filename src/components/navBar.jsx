@@ -49,6 +49,11 @@ export default function NavBar() {
               jokes
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/query">
+              query
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

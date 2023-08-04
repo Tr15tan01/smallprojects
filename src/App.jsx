@@ -11,6 +11,7 @@ import {
   Jobs,
   Colors,
   Jokes,
+  Query,
 } from "./pages";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="faq" element={<Faq />} />
           <Route path="colors" element={<Colors />} />
           <Route path="jokes" element={<Jokes />} />
+          <Route path="query" element={<Query />} />
           <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>

@@ -9,6 +9,7 @@ import { Faq } from "./faq";
 import { Jobs } from "./jobs";
 import { Colors } from "./colors";
 import { Jokes } from "./jokes";
+import { Query } from "./query";
 
 export {
   About,
@@ -22,4 +23,5 @@ export {
   Jobs,
   Colors,
   Jokes,
+  Query,
 };
