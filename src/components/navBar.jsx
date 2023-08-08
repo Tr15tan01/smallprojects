@@ -54,6 +54,11 @@ export default function NavBar() {
               query
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/unsplash">
+              unsplash
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -12,6 +12,7 @@ import {
   Colors,
   Jokes,
   Query,
+  Unsplash,
 } from "./pages";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="colors" element={<Colors />} />
           <Route path="jokes" element={<Jokes />} />
           <Route path="query" element={<Query />} />
+          <Route path="unsplash" element={<Unsplash />} />
           <Route path="products/:productId" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>

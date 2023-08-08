@@ -10,6 +10,7 @@ import { Jobs } from "./jobs";
 import { Colors } from "./colors";
 import { Jokes } from "./jokes";
 import { Query } from "./query";
+import { Unsplash } from "./unsplash";
 
 export {
   About,
@@ -24,4 +25,5 @@ export {
   Colors,
   Jokes,
   Query,
+  Unsplash,
 };
