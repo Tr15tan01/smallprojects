@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState } from "react";
 
 const AppContext = createContext();
 
@@ -13,9 +13,18 @@ export const AppContextProvider = ({ children }) => {
     body.classList.toggle("dark-theme", newDarkTheme);
   };
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("cat");
 
   return (
-    <AppContext.Provider value={{ greeting, isDarkTheme, toggleDarkTheme }}>
+    <AppContext.Provider
+      value={{
+        greeting,
+        isDarkTheme,
+        toggleDarkTheme,
+        searchTerm,
+        setSearchTerm,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
